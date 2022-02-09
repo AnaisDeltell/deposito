@@ -9,9 +9,9 @@ class testEstaVacio {
 	@Test
 	void test() {
 		
-		DepositoCombustible tank = new DepositoCombustible(40.0, 5.0);
-		tank.consumir(5.0);
-		assertEquals(0.0, tank.getDepositoNivel());
+		DepositoCombustible tank = new DepositoCombustible(40.0, 10.0);
+		tank.consumir(10.0);
+		assertEquals(true, tank.estaVacio());
 
 	}
 
